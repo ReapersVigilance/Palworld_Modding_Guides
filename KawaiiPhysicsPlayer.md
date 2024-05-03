@@ -1,13 +1,13 @@
-![Banner_01.png](assets/KawaiiGuide/Banner_01.png)
 # Kawaii Physics for Player Model Swaps
 Using Unreal Editors Compatible Skeletons to add Custom Bones and apply physics to them
 
 - **Written by: `ReapersVigilance`**
 
+#
 
+![Banner_01.png](assets/KawaiiGuide/Banner_01.png)
 
-
-## Overview
+# Overview
 
 This guide is to show how to setup your model with UE's compatible skeletons to activate Kawaii physics and collision. **FOR CUSTOM ADDED BONES** 
 ####
@@ -19,7 +19,7 @@ I'm going to Write this as a full Model Swap however it can be done with just Ha
 process is very similar to a normal model swap except for some key differences in the Exporting from blender and UE work.
 
 
-### Critical Notes
+## Critical Notes
 - This method works for adding physics to **CUSTOM BONES** in both Hair and Head Swaps. It does **NOT** work for adding physics bones to Outfit swaps. (Unless you like T-posing everywhere)So it works best doing them all together and choosing which Kawaii parts will be Hair and which will be Head.
 - As long as you're adding physics to Default Bones on an Outfit, that'll work without the Compatible Skeletons. Can skip right to the Kawaii section for that.
 ####
@@ -28,9 +28,8 @@ It just allows you to add physics to swaps without breaking the animations.
 
 Can be used in combination with Jiggle Physics (18+) guide by **`Dytser`**
 
-###
 
-### Tools Needed
+## Tools Needed
 
 - FModel
 - Blender
@@ -39,7 +38,7 @@ Can be used in combination with Jiggle Physics (18+) guide by **`Dytser`**
 - UnrealPak
 
 
-### Preview
+## Preview
 See **`Gif 01`** for a brief preview of what this guide accomplishes
 <table>
 <tr>
@@ -68,6 +67,8 @@ Head and Hair Swaps have Enabled Physics
 </tr>
 </table>
 
+#
+
 ![Banner_01.png](assets/KawaiiGuide/Banner_01.png)
 
-## Process
+# Process
