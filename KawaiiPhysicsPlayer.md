@@ -162,7 +162,7 @@ linked to the spine
 <tr>
 <td>
   
-  **Image_18 - Bug_01**  
+  **Image_18 - Mounted_Bug**  
   
 Shows the Bug of using custom bones while in mounted combat 
 
@@ -180,7 +180,7 @@ The ears still pull straight back
 <tr>
 <td>
   
-  **Image_19 - Bug_02**  
+  **Image_19 - Mounted_Bug_Fix**  
   
 The fix 
 
@@ -193,6 +193,265 @@ the bones are renamed to default hair bones
 <td>
   
   ![Image_19-Bug_02.png](assets/KawaiiGuide/Image_19-Bug_02.png) 
+
+</td>
+</tr>
+</table>
+
+## Step 3 _ (Blender) - `Dividing up the Model`
+- You now need to split your model into the Necessary Parts that are going to be your *Outfit Swap*, *Head Swap*, and *Hair Swap*.
+    - For my exaple the Ears are a *Hair Swap*, The Tail and Back spikes are a *Head Swap*, and Everything else is an *Outfit Swap* 
+    - Keep in mind that some helmets overwrite the hair, so if you dont want your *Hair Swap* to disappear in those instances you can combine the *Hair Swap* and *Head Swap* into just a *Head Swap*.
+- Keep in mind you only need to separate the meshes but everything can stay attached to the same Armature **`SEE IMAGES 03, 04, and 05`**
+    - I added small spheres onto the connection bone as i occasionally had a bone error on importing to UE but it was not consistent. Those spheres stopped it completely.
+- Export these as 3 separate FBX files with the armature in each one. just like the images.
+
+<table>
+<tr>
+<th>Reference File Name/Description</th>
+<th>Reference File</th>
+</tr>
+<tr>
+<td>
+  
+  **Image_03 - Hair_FBX**  
+  
+This shows the active parts for the *Hair Swap*  
+Make sure to select these and use Selected Only when exporting  
+
+Ensure you armature is named *Armature*
+</td>
+<td>
+  
+  ![Image_03s-Hair_FBX.PNG](assets/KawaiiGuide/Image_03s-Hair_FBX.PNG) 
+
+</td>
+</tr>
+<tr>
+<td>
+  
+  **Image_04 - Head_FBX**  
+  
+This shows the active parts for the *Head Swap*  
+Make sure to select these and use Selected Only when exporting  
+
+Ensure you armature is named *Armature*
+</td>
+<td>
+  
+  ![Image_04s-Head_FBX.PNG](assets/KawaiiGuide/Image_04s-Head_FBX.PNG) 
+
+</td>
+</tr>
+<tr>
+<td>
+  
+  **Image_05 - Outfit_FBX**  
+  
+This shows the active parts for the *Outfit Swap*  
+Make sure to select these and use Selected Only when exporting  
+
+Ensure you armature is named *Armature*
+</td>
+<td>
+  
+  ![Image_05s-Outfit_FBX.PNG](assets/KawaiiGuide/Image_05s-Outfit_FBX.PNG) 
+
+</td>
+</tr>
+</table>
+
+## Step 4 _ (UE) - `Import Setup`
+- UE folder setup is the same as any normal model swap as well as all your cooking settings  **`SEE IMAGE 06`**
+     - I am only doing an *Outfit Swap* of the Old Cloth in this example, If you're doing other outfits then you'll need those too.
+     - note that the *Hair Swap* and *Head Swap* can be done with any head and hair, not just 001 as i am showing here
+
+<table>
+<tr>
+<th>Reference File Name/Description</th>
+<th>Reference File</th>
+</tr>
+<tr>
+<td>
+  
+  **Image_06 - File_Structure**  
+  
+The Standard Model Swap file structure 
+  
+More or Differnt Folders may be required for your specific swap  
+  
+Adjust as required
+</td>
+<td>
+  
+  ![Image_06-File_Structure.PNG](assets/KawaiiGuide/Image_06-File_Structure.PNG) 
+
+</td>
+</tr>
+</table>
+
+## Step 5 _ (UE) - `Import Outfit FBX`
+- Standard model swap applies here
+- Import your FBX into the folder `SK_Player_Female_Outfit_OldCloth001`
+    - Rename `Skeleton` to `SK_PalHuman_Skeleton`, and move to the Human Folder  **`SEE IMAGE 07`**
+    - Rename `Physics Asset` to `SK_Player_Female_PhysicsAsset`, and move to the Female Folder  **`SEE IMAGE 08`**
+     - Rename `Skeletal Mesh` to `SK_Player_Female_Outfit_OldCloth001`  **`SEE IMAGE 09`**
+- Renaming materials and Textures is up to you, or may depend on what kind of swap you are doing
+- If you have more outfits, rename and relink skeleton and physics asset as necessary.
+
+####
+
+- Optional set up of `Kawaii Collision Asset`
+  - Right click on the `Skeletal Mesh` and Create an `Animation Blueprint`
+    - You may already have one if jiggle physics are enabled
+  - Use this model to create the `Collision Asset` as you can see all collidable entities
+    - I wont go into detail on this as its quite involved but I will link a very informative Video at the end of this for how to do it. 
+       - Experiment with your Collision objects as you need.
+   - If you dont set up the `Collision Asset` the physics will still work, they just may clip with your model
+
+<table>
+<tr>
+<th>Reference File Name/Description</th>
+<th>Reference File</th>
+</tr>
+<tr>
+<td>
+  
+  **Image_07 - Outfit_Skeleton_Location**  
+  
+Shows the Location of the `Skeleton` for the *Outfit Swap*  
+  
+Ensure the name of your file matches  
+</td>
+<td>
+  
+  ![Image_07-Outfit_Skeleton_Location.PNG](assets/KawaiiGuide/Image_07-Outfit_Skeleton_Location.PNG) 
+
+</td>
+</tr>
+<tr>
+<td>
+  
+  **Image_08 - Outfit_PA_Location**  
+  
+Shows the Location of the `Physics Asset` for the *Outfit Swap*  
+  
+Ensure the name of your file matches  
+</td>
+<td>
+  
+  ![Image_08-Outfit_PA_Location.PNG](assets/KawaiiGuide/Image_08-Outfit_PA_Location.PNG) 
+
+</td>
+</tr>
+<tr>
+<td>
+  
+  **Image_09 - Outfit_Mesh_Location**  
+  
+Shows the Location of the `Skeletal Mesh` for the *Outfit Swap*  
+  
+Ensure the name of your `Skeletal Mesh` matches  
+The other files can be named as you like  
+
+More or Differnt Folders may be required for your specific swap 
+</td>
+<td>
+  
+  ![Image_09-Outfit_Mesh_Location.PNG](assets/KawaiiGuide/Image_09-Outfit_Mesh_Location.PNG) 
+
+</td>
+</tr>
+</table>
+
+## Step 6 _ (UE) - `Import Hair FBX`
+- Import your FBX into the folder Hair 001
+    - Rename `Skeletal Mesh` to `SK_Player_Hair001`
+- Renaming anything else is up to you
+- Right click on the `Skeletal Mesh` and Create an `Animation Blueprint`
+- Open the `Physics Asset` that was auto generated upon import
+    - We dont need anything here as it will be controlled by Kawaii
+        - Delete everything under the skeleton tree
+        - Save and Close  
+            *Possible that setting this up further will add collision between the hair and the world around,* ***needs more testing***
+- Open the `Skeletal Mesh`
+    - under the `Asset Details` Tab, Scroll down until you find the `Post Process Anim Blueprint` and set it to the one you just Created  **`SEE IMAGE 10`**
+- Open the `Skeleton`
+    - Under the `Asset Details` Tab, Add a `Compatible Skeleton` and set it to the `SK_PalHuman_Skeleton` from the *Outfit FBX*  **`SEE IMAGE 11`**
+        - **IMPORTANT** This tab might be hidden by default for you, click on Window on the top bar to turn it on
+- Open the `Animation Blueprint`
+     - Set up your Kawaii physics and Collision. **`SEE IMAGE 12`**
+        - I wont go into detail on this as its quite involved but I will link a very informative Video at the end of this for how to do it. 
+            - Experiment with your settings as you need. 
+- **`SEE IMAGE 13 FOR FINALIZED FOLDER`**
+
+<table>
+<tr>
+<th>Reference File Name/Description</th>
+<th>Reference File</th>
+</tr>
+<tr>
+<td>
+  
+  **Image_10 - Hair_SkeletalMesh**  
+  
+Shows the Opened `Skeletal Mesh` File  
+  
+Under `Asset Details/Skeletal Mesh/Post Process Anim Blueprint`   
+  
+Set the `Anim Blueprint` Created during this step  
+</td>
+<td>
+  
+  ![Image_10-Hair_SkeletalMesh.PNG](assets/KawaiiGuide/Image_10-Hair_SkeletalMesh.PNG) 
+
+</td>
+</tr>
+<tr>
+<td>
+  
+  **Image_11 - Hair_Skeleton**  
+  
+Shows the Opened `Skeleton` File  
+
+Under `Asset Details/Compatible Skeletons/`  
+Use the + symbol to add a line  
+  
+Set the `SK_PalHuman_Skeleton` Created during the *Outfit Swap*  
+</td>
+<td>
+  
+  ![Image_11-Hair_Skeleton.PNG](assets/KawaiiGuide/Image_11-Hair_Skeleton.PNG) 
+
+</td>
+</tr>
+<tr>
+<td>
+  
+  **Image_12 - Hair_AnimBP**  
+  
+Shows the Opened `Animation Blueprint` File  
+  
+use the Kawaii Video Guide for setting up    
+  
+Show values are an example  
+</td>
+<td>
+  
+  ![Image_12-Hair_AnimBP.PNG](assets/KawaiiGuide/Image_12-Hair_AnimBP.PNG) 
+
+</td>
+</tr>
+<tr>
+<td>
+  
+  **Image_13 - Hair_Folder**  
+  
+Shows a final version of the set up Hair Folder
+</td>
+<td>
+  
+  ![Image_13-Hair_Folder.PNG](assets/KawaiiGuide/Image_13-Hair_Folder.PNG) 
 
 </td>
 </tr>
