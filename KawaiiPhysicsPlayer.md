@@ -19,7 +19,7 @@ process is very similar to a normal model swap except for some key differences i
 
 
 ### Critical Notes
-- This method works for adding physics to **CUSTOM BONES** in both Hair and Head Swaps. It does **NOT** work for adding physics to Outfit swaps. (Unless you like T-posing everywhere)So it works best doing the two together and choosing which Kawaii parts will be Hair and which will be Head.
+- This method works for adding physics to **CUSTOM BONES** in both Hair and Head Swaps. It does **NOT** work for adding physics bones to Outfit swaps. (Unless you like T-posing everywhere)So it works best doing them all together and choosing which Kawaii parts will be Hair and which will be Head.
 - As long as you're adding physics to Default Bones on an Outfit, that'll work without the Compatible Skeletons. Can skip right to the Kawaii section for that.
 ####
 This is absolutely not a replacement for the bone reorder and animation tool by **`Shifty`**
@@ -38,4 +38,4 @@ Can be used in combination with Jiggle Physics (18+) guide by **`Dytser`**
 
 
 ### Preview
-![Gif_01-Preview.gif](assets/jiggle/Gif_01-Preview.gif)
+![Gif_01-Preview.gif](assets/KawaiiGuide/Gif_01-Preview.gif)
