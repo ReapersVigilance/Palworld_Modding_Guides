@@ -1,3 +1,4 @@
+![Banner_01.png](assets/KawaiiGuide/Banner_01.png)
 # Kawaii Physics for Player Model Swaps
 Using Unreal Editors Compatible Skeletons to add Custom Bones and apply physics to them
 
@@ -27,6 +28,7 @@ It just allows you to add physics to swaps without breaking the animations.
 
 Can be used in combination with Jiggle Physics (18+) guide by **`Dytser`**
 
+###
 
 ### Tools Needed
 
@@ -38,4 +40,34 @@ Can be used in combination with Jiggle Physics (18+) guide by **`Dytser`**
 
 
 ### Preview
-![Gif_01-Preview.gif](assets/KawaiiGuide/Gif_01-Preview.gif)
+See **`Gif 01`** for a brief preview of what this guide accomplishes
+<table>
+<tr>
+<th>Reference File Name/Description</th>
+<th>Reference File</th>
+</tr>
+<tr>
+<td>
+  
+  **Gif 01 - Preview**  
+  
+A preview of what will be done using this guide 
+
+The Body/Arms/Legs/Head are an Outfit Swap   
+The Ears are a Hair Swap  
+The Tail and Spikes are a Head Swap
+
+Note that the objects included in the  
+Head and Hair Swaps have Enabled Physics
+</td>
+<td>
+  
+  ![Gif_01-Preview.gif](assets/KawaiiGuide/Gif_01-Preview.gif) 
+
+</td>
+</tr>
+</table>
+
+![Banner_01.png](assets/KawaiiGuide/Banner_01.png)
+
+## Process
