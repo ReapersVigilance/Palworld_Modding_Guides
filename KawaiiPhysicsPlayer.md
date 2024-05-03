@@ -307,6 +307,7 @@ Adjust as required
   - Use this model to create the `Collision Asset` as you can see all collidable entities
     - I wont go into detail on this as its quite involved but I will link a very informative Video at the end of this for how to do it. 
        - Experiment with your Collision objects as you need.
+       - **`SEE IMAGE 20`** for sample
    - If you dont set up the `Collision Asset` the physics will still work, they just may clip with your model
 
 <table>
@@ -359,6 +360,23 @@ More or Differnt Folders may be required for your specific swap
 <td>
   
   ![Image_09-Outfit_Mesh_Location.PNG](assets/KawaiiGuide/Image_09-Outfit_Mesh_Location.PNG) 
+
+</td>
+</tr>
+<tr>
+<td>
+  
+  **Image_20 - Kawaii_Sample**  
+  
+Shows a sample of the `Kawaii Collision Asset`  
+
+This collision specific for stopping the tail from clipping with the legs  
+  
+Second image shows how it looks pulled into the other swaps after setup  
+</td>
+<td>
+  
+  ![Image_20-Kawaii_Sample.png](assets/KawaiiGuide/Image_20-Kawaii_Sample.png) 
 
 </td>
 </tr>
