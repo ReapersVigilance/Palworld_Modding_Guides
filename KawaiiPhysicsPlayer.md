@@ -569,4 +569,5 @@ Shows a final version of the set up Hair Folder
 
 # Resources
 
-This guide is to show how to setup your model with UE's compatible skeletons to activate Kawaii physics
+## Kawaii Video Guide
+- [https://www.youtube.com/watch?v=H4Gf6XMWh8I&t=1s](https://www.youtube.com/watch?v=H4Gf6XMWh8I&t=1s)
