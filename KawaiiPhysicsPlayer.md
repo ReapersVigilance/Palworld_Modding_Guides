@@ -71,4 +71,59 @@ Head and Hair Swaps have Enabled Physics
 
 ![Banner_01.png](assets/KawaiiGuide/Banner_01.png)
 
-# Process
+# Full Process
+
+## Step 1 _ (FModel and Blender) - `File Prep`
+- Standard Model Swap process to begin
+    - The Psk you will need to Export from FModel is the `SK_Player_Female` from the path `Pal/Content/Pal/Model/Character/Player/Body/Female` this comes with the SK_PalHuman_Skeleton we need
+      - can be done with one of the outfit skeletons as well as they reference the same.
+- Import this psk into blender along with the model you will be swapping.   **`SEE IMAGE 01`**
+- From here is the same as a normal model swap with aligning your model and applying your model to the game skeleton.
+<table>
+<tr>
+<th>Reference File Name/Description</th>
+<th>Reference File</th>
+</tr>
+<tr>
+<td>
+  
+  **Image_01 - Default**  
+  
+A preview of what will be done using this guide 
+
+The Body/Arms/Legs/Head are an Outfit Swap   
+The Ears are a Hair Swap  
+The Tail and Spikes are a Head Swap
+
+Note that the objects included in the  
+Head and Hair Swaps have Enabled Physics
+</td>
+<td>
+  
+  ![Image_01-Default.PNG](assets/KawaiiGuide/Image_01-Default.PNG) 
+
+</td>
+</tr>
+</table>
+
+## Step 2 _ (Blender) - `Add Bones and Painting`
+- You can now add bones to the skeleton that will reference any part you want Kawaii Physics
+    - Hair, Tail, Ears, Dangling parts, Whatever
+    - Have the last bone of these parts off of the model. It helps for the physics later.  **`SEE IMAGE 02`**
+    - ENSURE THESE BONES ATTACH TO OTHER BONES 
+        - Example: parent the first bone of a hair chain to the head bone,  
+            or parent the first tail bone to the spine_01 bone.
+- Weight paint. 
+    - Whether you do it manually or use Mesh Data Transfer from the original game model.   
+        Tweak as necessary for your new bones.
+     - That last bone thats slightly hanging off will need to influence the very tip of whatever part its attached it.
+
+![Banner_03.png](assets/KawaiiGuide/Banner_03.png)
+
+- There is an in game bug regarding Mounted Combat that needs to be worked around at this point or it will affect everything from here on. **`SEE IMAGE 18`**
+    - Any Custom added bones Above the Waist will error when aiming side to side while mounted. This has something to do with the animation lock of the root bone.
+    - To Fix. all above waist added bones must use names of existing in game bones that are not being used by the Outfit Swap. 
+        - All the Hair bones can be used to fix this **`SEE IMAGE 19`**
+    - This bug persists on anything with applied physics even if not using Kawaii. ie. spring controllers for jiggle physics
+        - I recommend repurposing the backpack bones as weight paint for breasts
+
