@@ -100,7 +100,7 @@ Head and Hair Swaps have Enabled Physics
 </td>
 <td>
   
-  ![Image_01-Default.PNG](assets/KawaiiGuide/Image_01-Default.PNG) 
+  ![Image_01s-Default.PNG](assets/KawaiiGuide/Image_01s-Default.PNG) 
 
 </td>
 </tr>
@@ -117,6 +117,34 @@ Head and Hair Swaps have Enabled Physics
     - Whether you do it manually or use Mesh Data Transfer from the original game model.   
         Tweak as necessary for your new bones.
      - That last bone thats slightly hanging off will need to influence the very tip of whatever part its attached it.
+<table>
+<tr>
+<th>Reference File Name/Description</th>
+<th>Reference File</th>
+</tr>
+<tr>
+<td>
+  
+  **Image_02 - Custom Bones**  
+  
+An example of Custom added bones  
+  
+The 4 bone chain for the ears  
+linked to the head bone  
+  
+The 3 bone chains for each spike  
+linked to the clavicles  
+  
+The 7 bone chain for the tail  
+linked to the spine
+</td>
+<td>
+  
+  ![Image_02s-Custom_Bones.PNG](assets/KawaiiGuide/Image_02s-Custom_Bones.PNG) 
+
+</td>
+</tr>
+</table>
 
 ![Banner_03.png](assets/KawaiiGuide/Banner_03.png)
 
@@ -126,4 +154,47 @@ Head and Hair Swaps have Enabled Physics
         - All the Hair bones can be used to fix this **`SEE IMAGE 19`**
     - This bug persists on anything with applied physics even if not using Kawaii. ie. spring controllers for jiggle physics
         - I recommend repurposing the backpack bones as weight paint for breasts
+<table>
+<tr>
+<th>Reference File Name/Description</th>
+<th>Reference File</th>
+</tr>
+<tr>
+<td>
+  
+  **Image_18 - Bug_01**  
+  
+Shows the Bug of using custom bones while in mounted combat 
+
+Notice the bone tree items marked RenaEar   
+
+Even though im facing left of the mount  
+The ears still pull straight back
+</td>
+<td>
+  
+  ![Image_18-Bug_01.png](assets/KawaiiGuide/Image_18-Bug_01.png) 
+
+</td>
+</tr>
+<tr>
+<td>
+  
+  **Image_19 - Bug_02**  
+  
+The fix 
+
+Using the exxact same bones  
+With identical weight paint  
+
+Only difference if you look at the tree  
+the bones are renamed to default hair bones
+</td>
+<td>
+  
+  ![Image_19-Bug_02.png](assets/KawaiiGuide/Image_19-Bug_02.png) 
+
+</td>
+</tr>
+</table>
 
