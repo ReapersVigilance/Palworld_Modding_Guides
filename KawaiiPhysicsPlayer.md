@@ -365,7 +365,7 @@ More or Differnt Folders may be required for your specific swap
 </table>
 
 ## Step 6 _ (UE) - `Import Hair FBX`
-- Import your FBX into the folder Hair 001
+- Import your FBX into the folder Hair001
     - Rename `Skeletal Mesh` to `SK_Player_Hair001`
 - Renaming anything else is up to you
 - Right click on the `Skeletal Mesh` and Create an `Animation Blueprint`
@@ -457,3 +457,116 @@ Shows a final version of the set up Hair Folder
 </tr>
 </table>
 
+
+## Step 7 _ (UE) - `Import Head FBX`
+- Import your FBX into the folder Head001
+    - Rename `Skeletal Mesh` to `SK_Player_Female_Head001`
+- Renaming anything else is up to you
+- Right click on the `Skeletal Mesh` and Create an `Animation Blueprint`
+- Open the `Physics Asset` that was auto generated upon import
+    - We dont need anything here as it will be controlled by Kawaii
+        - Delete everything under the skeleton tree
+        - Save and Close  
+            *Possible that setting this up further will add collision between the head parts and the world around,* ***needs more testing***
+- Open the `Skeletal Mesh`
+    - under the `Asset Details` Tab, Scroll down until you find the `Post Process Anim Blueprint` and set it to the one you just Created  **`SEE IMAGE 14`**
+- Open the `Skeleton`
+    - Under the `Asset Details` Tab, Add a `Compatible Skeleton` and set it to the `SK_PalHuman_Skeleton` from the *Outfit FBX*  **`SEE IMAGE 15`**
+        - **IMPORTANT** This tab might be hidden by default for you, click on Window on the top bar to turn it on
+- Open the `Animation Blueprint`
+     - Set up your Kawaii physics and Collision. **`SEE IMAGE 16`**
+        - I wont go into detail on this as its quite involved but I will link a very informative Video at the end of this for how to do it. 
+            - Experiment with your settings as you need. 
+- **`SEE IMAGE 17 FOR FINALIZED FOLDER`**
+
+<table>
+<tr>
+<th>Reference File Name/Description</th>
+<th>Reference File</th>
+</tr>
+<tr>
+<td>
+  
+  **Image_14 - Head_SkeletalMesh**  
+  
+Shows the Opened `Skeletal Mesh` File  
+  
+Under `Asset Details/Skeletal Mesh/Post Process Anim Blueprint`   
+  
+Set the `Anim Blueprint` Created during this step  
+</td>
+<td>
+  
+  ![Image_14-Head_SkeletalMesh.PNG](assets/KawaiiGuide/Image_14-Head_SkeletalMesh.PNG) 
+
+</td>
+</tr>
+<tr>
+<td>
+  
+  **Image_15 - Head_Skeleton**  
+  
+Shows the Opened `Skeleton` File  
+
+Under `Asset Details/Compatible Skeletons/`  
+Use the + symbol to add a line  
+  
+Set the `SK_PalHuman_Skeleton` Created during the *Outfit Swap*  
+</td>
+<td>
+  
+  ![Image_15-Head_Skeleton.PNG](assets/KawaiiGuide/Image_15-Head_Skeleton.PNG) 
+
+</td>
+</tr>
+<tr>
+<td>
+  
+  **Image_16 - Head_AnimBP**  
+  
+Shows the Opened `Animation Blueprint` File  
+  
+use the Kawaii Video Guide for setting up    
+  
+Show values are an example  
+</td>
+<td>
+  
+  ![Image_16-Head_AnimBP.PNG](assets/KawaiiGuide/Image_16-Head_AnimBP.PNG) 
+
+</td>
+</tr>
+<tr>
+<td>
+  
+  **Image_17 - Head_Folder**  
+  
+Shows a final version of the set up Hair Folder
+</td>
+<td>
+  
+  ![Image_17-Head_Folder.PNG](assets/KawaiiGuide/Image_17-Head_Folder.PNG) 
+
+</td>
+</tr>
+</table>
+
+## Step 8 - Finishing Touches
+- From here most everything is the same as a normal model swap so i will only go over it quickly and call attention to things that need it
+  - Cook like normal
+  - Copy into your Pak file structure and remove the `skeleton` in the Human folder, and the `Physics asset` in the Female Folder
+     - **CRITICAL** The skeleton and assets in the Head001 folder and Hair001 folder must **STAY** in the Pak
+  - Use UnrealPak to make your Pak file
+  - Drop into your game files
+
+## Step 9 - Finish
+- Enjoy a model swap with Kawaii Physics and Collision. Thats it
+  
+
+#
+
+![Banner_01.png](assets/KawaiiGuide/Banner_01.png)
+
+# Resources
+
+This guide is to show how to setup your model with UE's compatible skeletons to activate Kawaii physics
