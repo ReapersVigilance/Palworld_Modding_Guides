@@ -35,3 +35,7 @@ Can be used in combination with Jiggle Physics (18+) guide by **`Dytser`**
 - UE 5.1
 - Kawaii Physics plugin 1.10
 - UnrealPak
+
+
+### Preview
+![Gif_01-Preview.gif](assets/jiggle/Gif_01-Preview.gif)
